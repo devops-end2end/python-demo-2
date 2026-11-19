@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: python-demo-2
+  description: This app demonstrates the wonderousness of the Golden Path
+  tags:
+    - python
+  links:
+    - url: http://argocd.local/applications/argocd/python-demo-2-prod-home1
+      title: ArgoCD (Prod)
+      icon: dashboard
+    - url: http://argocd.local/applications/argocd/python-demo-2-test-home1
+      title: ArgoCD (Test)
+      icon: dashboard
+  annotations:
+    github.com/project-slug: devops-end2end/python-demo-2
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: service
+  lifecycle: experimental
+  owner: group:default/platform-engineering
